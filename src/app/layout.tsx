@@ -3,6 +3,9 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navigation from "../../components/navigation";
 
+import "../../styles/global.css";
+// layout 파일에 추가해야함
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",

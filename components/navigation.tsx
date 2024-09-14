@@ -4,11 +4,13 @@ import Link from 'next/link'; // Link 컴포넌트를 임포트
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 
+import styles from "../styles/navigation.module.css"
+
 export default function Navigation() {
     const path = usePathname();
     const [count, setCount] = useState(0);
     return (
-        <nav>
+        <nav className={styles.nav}>
             <ul>
                 <li>
                     <Link href="/">Home</Link> { path == "/" ? "🎋" : "🎗"}
