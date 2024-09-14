@@ -2,7 +2,6 @@ import { url } from "@/app/(home)/page";
 
 async function getMovie(id:string) {
     console.log(`Fetching movies: ${Date.now()}`);
-    await new Promise((resolve) => setTimeout(resolve, 5000));
     const reponse = await fetch(`${url}/${id}`);
     return reponse.json();
 }
