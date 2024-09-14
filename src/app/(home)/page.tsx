@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { resolve } from 'path';
 import Movie from '../../../components/movie';
 import styles from "../../../styles/home.module.css"
+import { url } from '../constants';
 
 // export default function Page(){
 
@@ -32,8 +33,6 @@ import styles from "../../../styles/home.module.css"
 export const metadata: Metadata = {
     title: "Home",
 };
-
-export const url = "https://nomad-movies.nomadcoders.workers.dev/movies";
 
 async function getMovies() {
     //await new Promise((resolve) => setTimeout(resolve, 1000));

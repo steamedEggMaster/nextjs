@@ -1,5 +1,5 @@
-import { url } from "@/app/(home)/page";
 import styles from "../styles/movie-info.module.css"
+import { url } from './../src/app/constants';
 
 export async function getMovie(id:string) {
     console.log(`Fetching movies: ${Date.now()}`);

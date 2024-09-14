@@ -1,4 +1,3 @@
-import { url } from "@/app/(home)/page"
 import { resolve } from "path"; 
 import MovieVideos from "../../../../../components/movie-videos";
 import MovieInfo, { getMovie } from "../../../../../components/movie-info";
